@@ -98,7 +98,7 @@ mv ../working/epoch_36.pth ./epoch_36.pth
 zip -r submission.zip .
 ```
 
-Then submit the submission.zip file to the competition website.
+Then submit the submission.zip file to the competition website [Link](https://codalab.lisn.upsaclay.fr/competitions/12441#participate).
 
 ### TODO: Adding a weak label is complicated, and I'm going to release it quickly.
 
