@@ -3,7 +3,7 @@
 ### Step 1 : Configure the mmpretrain environment
 
 ```bash
-git clone https://github.com/LuliDreamAI/MICCAI_TASK1.git
+git clone https://github.com/qingtian5/mmac_t1.git
 cd MICCAI_TASK1
 conda create -n miccai_mmpre python=3.8 pytorch==1.11.0 torchvision==0.12.0 cudatoolkit=11.3 -c pytorch -y
 conda activate miccai_mmpre
@@ -16,7 +16,7 @@ cd ..
 
 ### Step 2 : Place the images in the data directory
 
-1. The directory under data should be as follows.
+1. The dataset can be download by the [Google Drive](https://drive.google.com/drive/folders/1Mcq8c8z33APGPGXPc83QZTMf6xDdIH2C). And the directory under data should be as follows.
 
 ```bash
 data
