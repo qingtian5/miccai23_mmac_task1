@@ -3,14 +3,14 @@
 ### Step 1 : Configure the mmpretrain environment
 
 ```bash
-git clone https://github.com/qingtian5/mmac_t1.git
-cd MICCAI_TASK1
+git clone https://github.com/qingtian5/miccai23_mmac_task1.git
+cd miccai23_mmac_task1
 conda create -n miccai_mmpre python=3.8 pytorch==1.11.0 torchvision==0.12.0 cudatoolkit=11.3 -c pytorch -y
 conda activate miccai_mmpre
 pip3 install openmim
 git clone https://github.com/open-mmlab/mmpretrain.git
 cd mmpretrain
-mim install -e .
+pip3 install openmim && mim install -e .
 cd ..
 ```
 
@@ -100,6 +100,18 @@ zip -r submission.zip .
 
 Then submit the submission.zip file to the competition website [Link](https://codalab.lisn.upsaclay.fr/competitions/12441#participate).
 
-### TODO: Adding a weak label is complicated, and I'm going to release it quickly.
 
+### Citation
 
+If you find our work helpful, please consider citing the following papers
+
+```
+@inproceedings{lu2023swin,
+  title={Swin-MMC: Swin-Based Model for Myopic Maculopathy Classification in Fundus Images},
+  author={Lu, Li and Pan, Xuhao and Jin, Panji and Ding, Ye},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={18--30},
+  year={2023},
+  organization={Springer}
+}
+```
