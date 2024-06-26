@@ -7,7 +7,10 @@ Our all models are based on the [Swin-Transformer](https://github.com/microsoft/
 
 ![Figure 1](assets/Swin-MMC.png "Overview of Swin-MMC")
 
-![Figure 2](assets/weak_label.png "Weak Label Strategy")
+
+
+![Figure 2](assets/Weaklabel_v1.png "Weak Label Strategy")
+
 
 ## Getting Started
 
