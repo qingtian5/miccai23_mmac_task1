@@ -1,7 +1,15 @@
 # Our team in MICCAI MMAC 2023 - Myopic Maculopathy Analysis Challenge - Task 1 
 This repository contains our team's training lists and scripts used in [MICCAI MMAC 2023](https://codalab.lisn.upsaclay.fr/competitions/12441). An effective computer-aided system is essential to help ophthalmologists analyze myopic maculopathy, further providing accurate diagnosis and reasonable intervention for this disease. Given a training dataset, the task of the challenge was to classify the five categories of myopic macular degeneration. We trained several deep learning models based on the [Swin-base](https://github.com/microsoft/Swin-Transformer). Our best submission achieved a Mean score (Quadratic-weighted Kappa (QWK), F1 score, Specificity) score of 0.8660 (Rank 2) in the Test Phase and 0.8823 (Rank 1) in the Futher Test Phase. The official results can be found [here](https://codalab.lisn.upsaclay.fr/competitions/12441#results).
 
+## Methodology
 
+Our all models are based on the [Swin-Transformer](https://github.com/microsoft/Swin-Transformer), which is a vision transformer model. We used the Swin-Base model with the input size of 384x384. We add [ArcFace Loss](https://arxiv.org/abs/1801.07698) to the model to improve the classification performance, and we use a weak label strategy to train the model.
+
+![Figure 1](assets/Swin-MMC.png "Overview of Swin-MMC")
+
+![Figure 2](assets/weak_label.png "Weak Label Strategy")
+
+## Getting Started
 
 ### Step 1 : Configure the mmpretrain environment
 
@@ -104,7 +112,7 @@ zip -r submission.zip .
 Then submit the submission.zip file to the competition website [Link](https://codalab.lisn.upsaclay.fr/competitions/12441#participate).
 
 
-### Citation
+## Citation
 
 If you find our work helpful, please consider citing the following papers
 
