@@ -1,4 +1,7 @@
-# MICCAI_TASK1
+# Our team in MICCAI MMAC 2023 - Myopic Maculopathy Analysis Challenge - Task 1 
+This repository contains our team's training lists and scripts used in [MICCAI MMAC 2023](https://codalab.lisn.upsaclay.fr/competitions/12441). An effective computer-aided system is essential to help ophthalmologists analyze myopic maculopathy, further providing accurate diagnosis and reasonable intervention for this disease. Given a training dataset, the task of the challenge was to classify the five categories of myopic macular degeneration. We trained several deep learning models based on the [Swin-base](https://github.com/microsoft/Swin-Transformer). Our best submission achieved a Mean score (Quadratic-weighted Kappa (QWK), F1 score, Specificity) score of 0.8660 (Rank 2) in the Test Phase and 0.8823 (Rank 1) in the Futher Test Phase. The official results can be found [here](https://codalab.lisn.upsaclay.fr/competitions/12441#results).
+
+
 
 ### Step 1 : Configure the mmpretrain environment
 
